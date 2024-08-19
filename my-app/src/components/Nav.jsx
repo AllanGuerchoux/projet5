@@ -1,11 +1,11 @@
 import React from 'react';
-
+import '../pages/style/App.css'
 const Nav = () => {
     return (
-        <div>
+        <nav className='nav-header'>
             <a href='home'>Acceuil</a>
             <a href='a_propos'>A propos</a>
-        </div>
+        </nav>
     );
 };
 

@@ -1,11 +1,9 @@
 import React from 'react';
-import Nav from './Nav';
-import Logo from './Logo';
+import ConteneurHeader from './ConteneurHeader';
 const Header = () => {
     return (
         <header>
-            <Logo />
-            <Nav />
+            <ConteneurHeader />
         </header>
     );
 };
