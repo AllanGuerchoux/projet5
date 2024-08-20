@@ -1,5 +1,6 @@
-body{
-    width: 100%;
+
+body{ 
+    font-family: Montserrat;
 }
 header{
     display: flex;
@@ -68,3 +69,77 @@ header{
     object-fit: cover;
 }
 
+@media only screen and (max-width: 480px) {
+    body {
+      max-width: 335px; 
+      justify-content: center;
+      display: flex;
+      margin: auto;
+    }
+
+    header{
+        max-width: 335px;
+        display: flex;
+        justify-content: center;
+        max-height: 46.88px;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .conteneur-header-logo-nav{
+        width: 100%;
+        height: 100%;
+        gap: 0px;
+        opacity: 0px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center
+    }
+    .nav-header{
+        width:190px;
+        height:17px;
+        gap: 26px;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: flex-end;
+        
+    }
+    .kasaLogo{
+        max-width: 154px;
+        max-height: 46.88px;
+    }
+    .zoneTitre img{
+        z-index: auto;
+        width: 335px;
+        height: 934px;
+        object-fit: cover;
+        filter:brightness(50%)
+
+        
+
+    }
+    .zoneTitre{
+        max-width: 335px;
+        max-height: 111px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px ;
+    }
+    .zoneTitre h1{
+        z-index: 1;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        width: 225px;
+        height: 48px;
+        left: 40px;
+        position: absolute;
+
+
+       
+       
+
+    }
+  }
