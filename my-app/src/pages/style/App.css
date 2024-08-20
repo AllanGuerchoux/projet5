@@ -114,9 +114,6 @@ header{
         height: 934px;
         object-fit: cover;
         filter:brightness(50%)
-
-        
-
     }
     .zoneTitre{
         max-width: 335px;
@@ -136,10 +133,45 @@ header{
         height: 48px;
         left: 40px;
         position: absolute;
-
-
-       
-       
-
+    }
+    .gallery{
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .cardLogement{
+        width: 335px;
+        height: 255px;
+        display: flex;
+        align-items: flex-end;
+        margin: 10px;
+        border-radius: 8px;
+    }
+    .cardTitre{
+        display: flex;
+        max-width: 295.59px;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 25.67px;
+        text-align: left;
+        padding: 19.71px;
+        padding-bottom: 0px;
+        z-index: 1;
+        position: absolute;
+        text-shadow:-1px -1px 0 black,  
+                 1px -1px 0 black,
+                -1px 1px 0 black,
+                1px 1px 0 black;
+    }
+    .cardLogement img{
+        overflow: hidden;   
+        z-index: auto;
+        object-fit: cover;
+        border-radius: 8px;
     }
   }
