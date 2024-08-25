@@ -1,3 +1,12 @@
+@mixin flexJustifyAlignCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+}
 
 body{ 
     font-family: Montserrat;
@@ -42,16 +51,13 @@ header{
     border: 1px ;
     text-align: center;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexJustifyAlignCenter;
 }
 .zoneTitre h1{
     position: absolute;
     color: white;
     outline: 1px;
     outline-color: black;
-    font-family: Montserrat;
     font-size: 48px;
     font-weight: 700;
     line-height: 68.45px;
@@ -68,33 +74,27 @@ header{
     height: 100%;
     object-fit: cover;
 }
+@media only screen and (max-width: 480px){
+body{
+    font-family: Montserrat;
+}
 
-@media only screen and (max-width: 480px) {
-    body {
-      max-width: 335px; 
-      justify-content: center;
-      display: flex;
-      margin: auto;
-    }
-
-    header{
-        max-width: 335px;
-        display: flex;
-        justify-content: center;
-        max-height: 46.88px;
-        flex-direction: column;
-        margin: 20px;
-    }
-    .conteneur-header-logo-nav{
+header{
+max-width: 335px;
+@include flexCenter;
+max-height: 46.88px;
+flex-direction: column;
+margin: 20px;
+    .conteneur-header-logo-nav  {
         width: 100%;
         height: 100%;
         gap: 0px;
         opacity: 0px;
         display:flex;
         justify-content: space-between;
-        align-items: center
-    }
-    .nav-header{
+        align-items: center;
+
+        .nav-header{
         width:190px;
         height:17px;
         gap: 26px;
@@ -102,38 +102,37 @@ header{
         margin: 0;
         padding: 0;
         justify-content: flex-end;
-        
     }
-    .kasaLogo{
+        .kasaLogo{
         max-width: 154px;
         max-height: 46.88px;
     }
-    .zoneTitre img{
+}
+}
+.zoneTitre{
+    max-width: 335px;
+    max-height: 111px;
+    @include flexJustifyAlignCenter;
+    border-radius: 8px;
+    img{
         z-index: auto;
         width: 335px;
         height: 934px;
         object-fit: cover;
-        filter:brightness(50%)
+        filter: brightness(50%);
+
     }
-    .zoneTitre{
-        max-width: 335px;
-        max-height: 111px ;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 8px ;
-    }
-    .zoneTitre h1{
+    h1{
         z-index: 1;
-        font-family: Montserrat;
         font-size: 24px;
-        font-weight: 700;
+        font-weight:700;
         line-height: 24px;
         width: 225px;
         height: 48px;
         left: 40px;
         position: absolute;
     }
+}
     .gallery{
         width: 100%;
         height: auto;
@@ -142,36 +141,52 @@ header{
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
+        .cardLogement{
+            width: 335px;
+            height: 225px;
+            display: flex;
+            align-items: flex-end;
+            margin: 10px;
+            border-radius: 8px;
+            overflow: hidden;
+            .cardTitre{
+                display: flex;
+                max-width: 295.59px;
+                color: white;
+                font-size: 18px;
+                font-weight: 25.67px;
+                text-align: left;
+                padding: 19.71px;
+                padding-bottom: 0;
+                z-index: 1;
+                position: absolute;
+                text-shadow:-1px -1px 0 black,  
+                            1px -1px 0 black,
+                            -1px 1px 0 black,
+                            1px 1px 0 black;
+            }
+            img{
+                
+                z-index: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 8px;
+                
+            }
+        }
     }
-    .cardLogement{
-        width: 335px;
-        height: 255px;
-        display: flex;
-        align-items: flex-end;
-        margin: 10px;
-        border-radius: 8px;
+    footer{
+        background-color: black;
+        
+        width: 100%;
+        height: 209px;
+
+        .kasaLogo {
+           color: white;
+        }
     }
-    .cardTitre{
-        display: flex;
-        max-width: 295.59px;
-        color: white;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 25.67px;
-        text-align: left;
-        padding: 19.71px;
-        padding-bottom: 0px;
-        z-index: 1;
-        position: absolute;
-        text-shadow:-1px -1px 0 black,  
-                 1px -1px 0 black,
-                -1px 1px 0 black,
-                1px 1px 0 black;
-    }
-    .cardLogement img{
-        overflow: hidden;   
-        z-index: auto;
-        object-fit: cover;
-        border-radius: 8px;
-    }
-  }
+    
+}   
+

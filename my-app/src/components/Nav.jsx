@@ -1,5 +1,5 @@
 import React from 'react';
-import '../pages/style/App.css'
+import '../pages/style/index.css'
 const Nav = () => {
     return (
         <nav className='nav-header'>

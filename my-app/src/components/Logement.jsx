@@ -1,5 +1,6 @@
 import React from 'react';
 import Data from '../dossier-logement/logement.json'
+import '../pages/style/index.css'
 const Logement = () => {
     return (
         <div className='gallery' >
