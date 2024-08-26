@@ -3,8 +3,8 @@ import '../pages/style/index.css'
 const Nav = () => {
     return (
         <nav className='nav-header'>
-            <a href='home'>Acceuil</a>
-            <a href='a_propos'>A propos</a>
+            <a href='home'>ACCEUIL</a>
+            <a href='a_propos'>A PROPOS</a>
         </nav>
     );
 };
