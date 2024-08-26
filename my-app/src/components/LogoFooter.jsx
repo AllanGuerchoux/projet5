@@ -1,6 +1,6 @@
 import React from 'react';
-
-const GalleryLocation = () => {
+import Logo from './Logo';
+const LogoFooter = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const GalleryLocation = () => {
     );
 };
 
-export default GalleryLocation;
+export default LogoFooter;

@@ -3,14 +3,14 @@ import Data from '../dossier-logement/logement.json'
 import '../pages/style/index.css'
 const Logement = () => {
     return (
-        <div className='gallery' >
+        <section className='gallery' >
             {Data.map(item =>(
                 <div className='cardLogement' key={item.id}>
                     <h2 className='cardTitre'>{item.title}</h2>
-                    <img src={item.cover} />
+                    <img src={item.cover} alt=''/>
                 </div>
             ))}
-        </div>
+        </section>
     );
 };
 
