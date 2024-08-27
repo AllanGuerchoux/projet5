@@ -12,73 +12,8 @@
     padding: 0;
 }
   // XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) { }  
-    body{
-        max-width:1240px ;
-        header{
-            width: 100%;
-            display: flex;
 
-            .conteneur-header-logo-nav{
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                .kasaLogo{
-                    display: flex;
-                    width: 210px;
-                    height: 64px;
-                }
-                .nav-header{
-                    display: flex;
-                    width: 50%;
-                    gap: 20px;
-                    justify-content: flex-end;
-                    a{
-                        text-decoration: none;
-                        color: black;
-                    }
-                }
-            }
-        }
-        main{
-            .sectionTitre{
-                padding: 20px;
-                display: flex;       
-                flex-direction: column;
-                .zoneTitre{
-                    width: 100%;
-                    h1{
-
-                    }
-                    img{
-
-                    }
-                }
-            }
-            .gallery{
-                .cardLogement{
-                    .cardTitre{
-
-                    }
-                }
-                img{
-
-                }
-            }
-
-        }
-        footer{
-            .kasaLogo{
-
-            }
-            .copyright{
-
-            }
-        }
-    }   
-  
-@media only screen and (max-width: 480px){
+@media only screen and (min-width: 480px){
     body{
         font-family: Montserrat;
          
@@ -151,8 +86,8 @@
             flex-wrap: wrap;
             align-items: center;
             .cardLogement{
-                min-width: 100%;
-                min-height: 255px;
+                width: 100%;
+                height: 255px;
                 display: flex;
                 align-items: flex-end;
                 margin-bottom: 20px;
@@ -208,4 +143,95 @@
         }   
        
 }
-    
+@media (min-width: 990px) {   
+    body{
+        max-width:1240px ;
+        header{
+            width: 100%;
+            display: flex;
+
+            .conteneur-header-logo-nav{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                .kasaLogo{
+                    display: flex;
+                    width: 210px;
+                    height: 64px;
+                }
+                .nav-header{
+                    display: flex;
+                    width: 50%;
+                    gap: 20px;
+                    justify-content: flex-end;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+        main{
+            .sectionTitre{
+                padding: 20px;
+                display: flex;       
+                flex-direction: column;
+                .zoneTitre{
+                    width: 100%;
+                    h1{
+                        z-index: 1;
+                        font-size: 24px;
+                        font-weight:700;
+                        line-height: 24px;
+                        position: absolute;
+                        color: white;
+                    }
+                    img{
+                        z-index: auto;
+                        width: 100%;
+                        height: 934px;
+                        object-fit: cover;
+                        object-position: center;
+                        filter: brightness(50%);
+                    }
+                }
+            }
+            .gallery{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: center;
+                .cardLogement{
+                    width: 30%;
+                    height: 340px;
+                    margin: 19px;
+                    
+                    .cardTitre{
+                        width: 300px;
+                    }
+                    img{
+                        z-index: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                        border-radius: 8px;
+                    }
+                }
+                
+            }
+
+        }
+        footer{
+            .kasaLogo{
+
+            }
+            .copyright{
+
+            }
+        }
+    }   
+}

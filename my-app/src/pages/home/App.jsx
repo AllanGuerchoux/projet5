@@ -1,16 +1,16 @@
 import React from 'react';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import '../style/index.css'
-import Main from '../../components/Main';
-const App = () => {
-    return (
-        <div>
-            <Header />
-            <Main />
-            <Footer />
-        </div>
-    );
-};
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Index from './Index';
+import APropos from '../APropos';
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/a_propos" element={<APropos/>} />
+      </Routes>
+    </Router>
+  );
+}
 
 export default App;
