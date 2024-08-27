@@ -3,6 +3,42 @@
   padding: 0;
 }
 
+body {
+  max-width: 1240px;
+}
+body header {
+  width: 100%;
+  display: flex;
+}
+body header .conteneur-header-logo-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+body header .conteneur-header-logo-nav .kasaLogo {
+  display: flex;
+  width: 210px;
+  height: 64px;
+}
+body header .conteneur-header-logo-nav .nav-header {
+  display: flex;
+  width: 50%;
+  gap: 20px;
+  justify-content: flex-end;
+}
+body header .conteneur-header-logo-nav .nav-header a {
+  text-decoration: none;
+  color: black;
+}
+body main .sectionTitre {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+body main .sectionTitre .zoneTitre {
+  width: 100%;
+}
 @media only screen and (max-width: 480px) {
   body {
     font-family: Montserrat;
@@ -39,6 +75,7 @@
   body main .sectionTitre {
     height: 111px;
     margin-bottom: 20px;
+    padding: 0;
   }
   body main .sectionTitre .zoneTitre {
     margin-bottom: 10px;

@@ -13,7 +13,70 @@
 }
   // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) { }  
-    
+    body{
+        max-width:1240px ;
+        header{
+            width: 100%;
+            display: flex;
+
+            .conteneur-header-logo-nav{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                .kasaLogo{
+                    display: flex;
+                    width: 210px;
+                    height: 64px;
+                }
+                .nav-header{
+                    display: flex;
+                    width: 50%;
+                    gap: 20px;
+                    justify-content: flex-end;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+        main{
+            .sectionTitre{
+                padding: 20px;
+                display: flex;       
+                flex-direction: column;
+                .zoneTitre{
+                    width: 100%;
+                    h1{
+
+                    }
+                    img{
+
+                    }
+                }
+            }
+            .gallery{
+                .cardLogement{
+                    .cardTitre{
+
+                    }
+                }
+                img{
+
+                }
+            }
+
+        }
+        footer{
+            .kasaLogo{
+
+            }
+            .copyright{
+
+            }
+        }
+    }   
   
 @media only screen and (max-width: 480px){
     body{
@@ -53,8 +116,8 @@
         .sectionTitre{
             height: 111px;
             margin-bottom: 20px;
+            padding: 0;
         .zoneTitre{
-
             margin-bottom: 10px;          
             height: 100%;
             @include flexJustifyAlignCenter;
