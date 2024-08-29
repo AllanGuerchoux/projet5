@@ -7,7 +7,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Index />} />
-        <Route path="/a_propos" element={<APropos/>} />
+        <Route path="/a_propos" element={<APropos />} />
       </Routes>
     </Router>
   );

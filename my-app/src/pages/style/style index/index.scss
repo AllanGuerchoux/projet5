@@ -145,7 +145,13 @@
 }
 @media (min-width: 990px) {   
     body{
-        max-width:1240px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: auto;
+        #root{
+            max-width: 1240px;
         header{
             width: 100%;
             display: flex;
@@ -233,5 +239,6 @@
 
             }
         }
-    }   
+    }  
+} 
 }
