@@ -1,16 +1,14 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import AProposCard from '../components/AProposCard';
-import DropdownMenu from '../components/MenuDropDown';
-import './style/index.css'
+import MainAPropos from '../components/MainAPropos';
+import './style/style APropos/aPropos.css'
 const APropos = () => {
-    console.log("APropos")
+    
     return (
         <div>
             <Header/>
-            <AProposCard/>
-            <DropdownMenu/>
+            <MainAPropos />
             <Footer/>
         </div>
     );

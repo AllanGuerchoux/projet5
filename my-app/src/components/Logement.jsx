@@ -1,6 +1,6 @@
 import React from 'react';
 import Data from '../dossier-logement/logement.json'
-import '../pages/style/index.css'
+import '../pages/style/style index/index.css'
 const Logement = () => {
     return (
         <section className='gallery' >

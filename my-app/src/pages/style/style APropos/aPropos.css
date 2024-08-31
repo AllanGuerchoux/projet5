@@ -1,1 +1,152 @@
-/*# sourceMappingURL=aPropos.css.map */
+@media (min-width: 576px) {
+  body #root header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  body #root header .conteneur-header-logo-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px;
+    width: 100%;
+  }
+  body #root header .conteneur-header-logo-nav .kasaLogo {
+    width: 50%;
+    height: 63px;
+  }
+  body #root header .conteneur-header-logo-nav .nav-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0;
+    width: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body #root header .conteneur-header-logo-nav .nav-header a {
+    text-decoration: none;
+    color: black;
+  }
+  body #root main {
+    padding: 20px;
+    height: auto;
+  }
+  body #root main .aProposCard {
+    width: 100%;
+  }
+  body #root main .aProposCard img {
+    width: 100%;
+    height: 111px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+    border-radius: 10px;
+  }
+  body #root main .aProposDropDownSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+  }
+  body #root main .aProposDropDownSection button {
+    width: 100%;
+    color: white;
+    background-color: #FF6060;
+    border-radius: 5px;
+    gap: 20px;
+  }
+}
+@media (min-width: 992px) {
+  body #root {
+    max-width: 1240px;
+  }
+  body #root header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  body #root header .conteneur-header-logo-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px;
+    width: 100%;
+  }
+  body #root header .conteneur-header-logo-nav .kasaLogo {
+    width: 50%;
+    height: 63px;
+  }
+  body #root header .conteneur-header-logo-nav .nav-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0;
+    width: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body #root header .conteneur-header-logo-nav .nav-header a {
+    text-decoration: none;
+    color: black;
+  }
+  body #root main {
+    padding: 20px;
+    height: auto;
+  }
+  body #root main .aProposCard {
+    width: 100%;
+  }
+  body #root main .aProposCard img {
+    width: 100%;
+    height: 111px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+    border-radius: 10px;
+  }
+  body #root main .aProposDropDownSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 1023px;
+    height: auto;
+    gap: 20px;
+  }
+  body #root main .aProposDropDownSection button {
+    width: 100%;
+    color: white;
+    background-color: #FF6060;
+    border-radius: 5px;
+    gap: 20px;
+  }
+}
+@media (min-width: 992px) {
+  a {
+    text-shadow: none;
+  }
+}/*# sourceMappingURL=aPropos.css.map */
