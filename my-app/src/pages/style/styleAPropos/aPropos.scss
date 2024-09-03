@@ -2,6 +2,15 @@
 // No media query for xs since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up)
+@mixin flexJustifyAlignCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+}
 @media (min-width: 576px) { 
   body{
     #root{

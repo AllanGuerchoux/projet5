@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import '../pages/style/style index/index.css'
+import '../pages/style/styleindex/index.css'
 const Nav = () => {
     return (
         <nav className='nav-header'>
