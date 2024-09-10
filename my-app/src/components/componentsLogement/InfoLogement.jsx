@@ -1,8 +1,12 @@
 import React from 'react';
 
-const InfoLogement = () => {
+const InfoLogement = ({tags}) => {
     return (
-        <div>
+        <div id='infoTags' className='infoTags'>
+            <div id='tags' className='tags'>
+                {tags.map((tags, index) =>
+                <span key={index} className='tagsFiltre' >{tags}</span>)}
+            </div>
             
         </div>
     );

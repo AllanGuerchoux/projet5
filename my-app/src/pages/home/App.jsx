@@ -12,7 +12,7 @@ function App() {
         <Route path="/home" element={<Index />} />
         <Route path="/a_propos" element={<APropos />} />
         <Route path='/logement/:id' element={<FicheLogement />} />
-        <Route path="*" element={<Page404 />} />
+        <Route path='*' element={<Page404 />} />
       </Routes>
     </Router>
   );

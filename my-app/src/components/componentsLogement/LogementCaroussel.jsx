@@ -16,10 +16,10 @@ const LogementCaroussel = ({ pictures }) => {
   }
 
 return(
-  <div className='carrousel'>
-    <img src={pictures[currentIndex]} alt={`Slide${currentIndex + 1}`} className='carrouselPicture'/>
-    <button className='carrouselPrevImg' onClick={previousImage}></button>
-    <button className='carrouselNextImg' onClick={nextImage}></button>
+  <div id='carrousel' >
+    <img id='carrouselImg' src={pictures[currentIndex]} alt={`Slide${currentIndex + 1}`} />
+    <button id='carrouselPrevImg' onClick={previousImage}></button>
+    <button id='carrouselNextImg' onClick={nextImage}></button>
   </div>
 )
 

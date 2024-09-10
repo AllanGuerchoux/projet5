@@ -4,7 +4,7 @@ import AProposCard from './AProposCard';
 import DropdownMenu from './MenuDropDown';
 const MainAPropos = () => {
     return (
-        <main>
+        <main id='mainApropos'>
             <Header/>
             <AProposCard />
             <DropdownMenu />
