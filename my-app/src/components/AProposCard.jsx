@@ -2,7 +2,7 @@ import React from 'react';
 import AProposImage from './AProposImage';
 const AProposCard = () => {
     return (
-        <div className='aProposCard'>
+        <div id='aProposCard'>
            <AProposImage/> 
         </div>
     );

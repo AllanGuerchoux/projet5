@@ -3,7 +3,7 @@ import Section from './Section';
 import Logement from './Logement';
 const Main = () => {
     return (
-        <main id='mainLogement'>
+        <main id='mainHome'>
             <Section />
             <Logement />
         </main>

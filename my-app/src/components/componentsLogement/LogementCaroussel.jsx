@@ -18,8 +18,16 @@ const LogementCaroussel = ({ pictures }) => {
 return(
   <div id='carrousel' >
     <img id='carrouselImg' src={pictures[currentIndex]} alt={`Slide${currentIndex + 1}`} />
-    <button id='carrouselPrevImg' onClick={previousImage}></button>
-    <button id='carrouselNextImg' onClick={nextImage}></button>
+    { currentIndex > 0 && (
+      <button id='carrouselPrevImg' onClick={previousImage}>
+          ❮
+        </button>
+      )}
+      {currentIndex <pictures.length - 1 &&(
+      <button id='carrouselNextImg' onClick={nextImage}>
+          ❯
+        </button>
+      )}
   </div>
 )
 

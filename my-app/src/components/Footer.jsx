@@ -1,10 +1,10 @@
 import React from 'react';
-import Logo from './Logo'
+import LogoF from './LogoFooter';
 import Copyright from './Copyright';
 const Footer = () => {
     return (
         <footer>
-            <Logo color={'white'} />
+            <LogoF />
             <Copyright />
         </footer>
     );

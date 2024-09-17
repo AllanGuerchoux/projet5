@@ -1,19 +1,52 @@
-import React from 'react';
-import Collapse from './LogementCollapse';
+import React, { useState } from 'react';
+
 
 const DescriptionEquipementLogement = ({ description, equipments }) => {
+    // Hook d'état pour gérer l'ouverture des collapses
+    const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
+    const [isEquipmentsOpen, setIsEquipmentsOpen] = useState(false);
+
+    // Fonction pour gérer l'ouverture/fermeture de la description
+    const toggleDescription = () => {
+        setIsDescriptionOpen(!isDescriptionOpen);
+    };
+
+    // Fonction pour gérer l'ouverture/fermeture des équipements
+    const toggleEquipments = () => {
+        setIsEquipmentsOpen(!isEquipmentsOpen);
+    };
+
     return (
-        <div id='infoLogementCollapse' className="info-logement-collapse">
-            <Collapse title="Description">
-                <p>{description}</p>
-            </Collapse>
-            <Collapse title="Équipements">
-                <ul>
-                    {equipments.map((equipment, index) => (
-                        <li key={index}>{equipment}</li>
-                    ))}
-                </ul>
-            </Collapse>
+        <div id="descriptionEquipementLogement">
+            {/* Collapse pour la description */}
+            <div className="collapseSection">
+                <div className="collapseHeader" onClick={toggleDescription}>
+                    <span>Description</span>
+                    <span className={`arrow ${isDescriptionOpen ? 'rotate' : ''}`}>▼</span>
+                </div>
+                {isDescriptionOpen && (
+                    <div className="collapseContent">
+                        <p>{description}</p>
+                    </div>
+                )}
+            </div>
+
+            {/* Collapse pour les équipements */}
+            <div className="collapseSection">
+                <div className="collapseHeader" onClick={toggleEquipments}>
+                    <span>Équipements</span>
+                    <span className={`arrow ${isEquipmentsOpen ? 'rotate' : ''}`}>▼</span>
+                </div>
+                {isEquipmentsOpen && (
+                    <div className="collapsContent">
+                        <ul>
+                            {equipments.map((equipment, index) => (
+                                <li key={index}>{equipment}</li>
+                            ))}
+                        </ul>
+                    </div>
+                )}
+            </div>
         </div>
     );
 };

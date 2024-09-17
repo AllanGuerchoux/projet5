@@ -5,10 +5,10 @@ import Header from '../components/Header';
 import NoteEtoile from '../components/componentsLogement/NoteEtoile';
 import LogementCaroussel from '../components/componentsLogement/LogementCaroussel';
 import Data from '../dossier-logement/logement.json';
-import './style/styleFicheLogements/ficheLogement.css';
 import TitreEtLocalisation from '../components/componentsLogement/TitreEtLocalisation';
 import DescriptionEquipementLogement from '../components/componentsLogement/DescriptionEquipementLogement';
 import InfoLogement from '../components/componentsLogement/InfoLogement';
+import HostInfo from '../components/componentsLogement/HostInfo';
 const FicheLogement = () => {
     const { id } = useParams(); // Extraction de l'ID depuis l'URL
     const logement = Data.find(item => item.id === id); // Recherche du logement correspondant
@@ -20,6 +20,7 @@ const FicheLogement = () => {
 
     return (
         <div>
+        <main id='mainFicheLogement'>
             <Header />
             <LogementCaroussel
             pictures={logement.pictures}/>
@@ -28,18 +29,24 @@ const FicheLogement = () => {
             title={logement.title}
             location={logement.location}
             />
+            <InfoLogement 
+            tags={logement.tags}/>
             <NoteEtoile 
                 hostName={logement.host.name} 
                 hostPicture={logement.host.picture}
                 rating={logement.rating}
             />
-            <InfoLogement 
-            tags={logement.tags}/>
+            
+            <HostInfo 
+            hostName={logement.host.name} 
+            hostPicture={logement.host.picture}/>
             
             <DescriptionEquipementLogement 
             description={logement.description} 
             equipments={logement.equipments}/>
-            <Footer />
+            
+        </main>
+        <Footer />
         </div>
     );
 };

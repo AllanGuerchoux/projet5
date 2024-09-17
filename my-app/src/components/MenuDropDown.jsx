@@ -9,7 +9,7 @@ function DropdownMenu() {
   };
 
   return (
-    <div id='aProaProposCollapse' className='aProposDropDownSection'>
+    <div id='aProaProposCollapse'>
       {Data.map(item => (
         <div key={item.id}>
           <button 
