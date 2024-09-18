@@ -6,6 +6,16 @@
 
 #pageCenter {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (min-width: 480px) {
@@ -607,12 +617,15 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0;
+    margin: 20px;
   }
   body #root #mainHome header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+    max-width: 1240px;
     margin-bottom: 27px;
   }
   body #root #mainHome header .conteneur-header-logo-nav {
@@ -685,9 +698,11 @@
     width: 340px;
     height: 340px;
     padding: 36.5px;
+    margin: 0;
   }
   body #root #mainHome #gallery .cardLogement .cardTitre {
-    width: 20%;
+    width: 300px;
+    height: 100px;
   }
   body #root #mainHome #gallery .cardLogement img {
     width: 100%;
