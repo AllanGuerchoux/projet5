@@ -4,7 +4,7 @@ import Nav from './Nav';
 const ConteneurHeader = () => {
     return (
         <div className='conteneur-header-logo-nav'>
-            <Logo color={'#FF6060'} />
+            <Logo />
             <Nav />
         </div>
     );

@@ -5,7 +5,7 @@ import MainAPropos from '../components/MainAPropos';
 const APropos = () => {
     
     return (
-        <div>
+        <div id='pageCenter'>
             <MainAPropos />
             <Footer/>
         </div>

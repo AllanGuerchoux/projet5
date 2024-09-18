@@ -19,7 +19,7 @@ const FicheLogement = () => {
     }
 
     return (
-        <div>
+        <div id='pageCenter'>
         <main id='mainFicheLogement'>
             <Header />
             <LogementCaroussel
@@ -31,19 +31,21 @@ const FicheLogement = () => {
             />
             <InfoLogement 
             tags={logement.tags}/>
+            <div id='etoilesHost'>
             <NoteEtoile 
                 hostName={logement.host.name} 
                 hostPicture={logement.host.picture}
                 rating={logement.rating}
             />
-            
             <HostInfo 
             hostName={logement.host.name} 
-            hostPicture={logement.host.picture}/>
-            
+            hostPicture={logement.host.picture}
+            />
+            </div>
             <DescriptionEquipementLogement 
             description={logement.description} 
-            equipments={logement.equipments}/>
+            equipments={logement.equipments}
+            />
             
         </main>
         <Footer />

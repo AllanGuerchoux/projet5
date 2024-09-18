@@ -22,7 +22,7 @@ const DescriptionEquipementLogement = ({ description, equipments }) => {
             <div className="collapseSection">
                 <div className="collapseHeader" onClick={toggleDescription}>
                     <span>Description</span>
-                    <span className={`arrow ${isDescriptionOpen ? 'rotate' : ''}`}>▼</span>
+                    <span className={` flecheOuverture arrow ${isDescriptionOpen ? 'rotate' : ''}`}>❮</span>
                 </div>
                 {isDescriptionOpen && (
                     <div className="collapseContent">
@@ -35,7 +35,7 @@ const DescriptionEquipementLogement = ({ description, equipments }) => {
             <div className="collapseSection">
                 <div className="collapseHeader" onClick={toggleEquipments}>
                     <span>Équipements</span>
-                    <span className={`arrow ${isEquipmentsOpen ? 'rotate' : ''}`}>▼</span>
+                    <span className={` flecheOuverture arrow ${isEquipmentsOpen ? 'rotate' : ''}`}>❮</span>
                 </div>
                 {isEquipmentsOpen && (
                     <div className="collapsContent">

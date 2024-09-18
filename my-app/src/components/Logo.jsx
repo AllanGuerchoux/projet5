@@ -1,10 +1,10 @@
 import React from 'react';
 import LogoHeader from '../picture/LOGOHEADER.png';
-const Logo = ({color}) => {
+const Logo = () => {
     return (
         
         <div>
-            <img src={LogoHeader} alt='logo' />
+            <img className='kasaLogo' src={LogoHeader} alt='logo' />
         </div>
     );
 };
