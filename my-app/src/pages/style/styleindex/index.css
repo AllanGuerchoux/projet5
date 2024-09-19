@@ -292,9 +292,33 @@ body {
     padding-left: 10px;
     padding-right: 10px;
   }
-  body #mainApropos #aProposCollapse button .flecheOuverture {
+  body #mainApropos #aProposCollapse button .fleche {
+    display: inline-block;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  }
+  body #mainApropos #aProposCollapse button .fleche.rotate {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  body #mainApropos #aProposCollapse .collapseText {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: max-height 0.5s ease, padding 0.5s ease;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+  }
+  body #mainApropos #aProposCollapse .collapseText.open {
+    max-height: 500px;
+    padding: 10px 0;
+  }
+  body #mainApropos #aProposCollapse .collapseText.open .content {
+    opacity: 1;
+    background-color: #f6f6f6;
+    border-radius: 5px;
   }
   body #main404 {
     margin: 20px;
@@ -913,11 +937,35 @@ body {
     padding-left: 10px;
     padding-right: 10px;
   }
-  body #mainApropos #aProposCollapse button .flecheOuverture {
+  body #mainApropos #aProposCollapse button .fleche {
+    display: inline-block;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   }
-  body #main404 {
+  body #mainApropos #aProposCollapse button .fleche.rotate {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  body #mainApropos #aProposCollapse .collapseText {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: max-height 0.5s ease, padding 0.5s ease;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+  }
+  body #mainApropos #aProposCollapse .collapseText.open {
+    max-height: 500px;
+    padding: 10px 0;
+  }
+  body #mainApropos #aProposCollapse .collapseText.open .content {
+    opacity: 1;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+  }
+  #main404 {
     margin: 20px;
     padding: 20px;
     -webkit-box-sizing: border-box;
@@ -939,14 +987,14 @@ body {
     height: 89.9vh;
     width: 100%;
   }
-  body #main404 header {
+  #main404 header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     margin-bottom: 117px;
   }
-  body #main404 header .conteneur-header-logo-nav {
+  #main404 header .conteneur-header-logo-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -956,11 +1004,11 @@ body {
             justify-content: space-between;
     height: 50px;
   }
-  body #main404 header .conteneur-header-logo-nav .kasaLogo {
+  #main404 header .conteneur-header-logo-nav .kasaLogo {
     width: 145px;
     height: 48px;
   }
-  body #main404 header .conteneur-header-logo-nav .nav-header {
+  #main404 header .conteneur-header-logo-nav .nav-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -974,12 +1022,12 @@ body {
             justify-content: flex-end;
     gap: 26px;
   }
-  body #main404 header .conteneur-header-logo-nav .nav-header a {
+  #main404 header .conteneur-header-logo-nav .nav-header a {
     text-decoration: none;
     color: black;
     margin: 0;
   }
-  body #main404 .codeErreur {
+  #main404 .codeErreur {
     width: 198px;
     height: 99px;
     display: -webkit-box;
@@ -997,7 +1045,7 @@ body {
     color: #FF6060;
     margin-bottom: 117px;
   }
-  body #main404 .codeErreurDescription {
+  #main404 .codeErreurDescription {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1010,13 +1058,13 @@ body {
     color: #FF6060;
     margin-bottom: 117px;
   }
-  body #main404 a {
+  #main404 a {
     color: black;
     font-weight: 500;
     font-size: 14px;
     margin-bottom: 117px;
   }
-  body #mainFicheLogement {
+  #mainFicheLogement {
     margin: 20px;
     padding: 20px;
     -webkit-box-sizing: border-box;
@@ -1030,14 +1078,14 @@ body {
             flex-direction: column;
     height: 89.9vh;
   }
-  body #mainFicheLogement header {
+  #mainFicheLogement header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     margin-bottom: 27px;
   }
-  body #mainFicheLogement header .conteneur-header-logo-nav {
+  #mainFicheLogement header .conteneur-header-logo-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1046,11 +1094,11 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  body #mainFicheLogement header .conteneur-header-logo-nav .kasaLogo {
+  #mainFicheLogement header .conteneur-header-logo-nav .kasaLogo {
     width: 145px;
     height: 48px;
   }
-  body #mainFicheLogement header .conteneur-header-logo-nav .nav-header {
+  #mainFicheLogement header .conteneur-header-logo-nav .nav-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1064,16 +1112,16 @@ body {
             justify-content: flex-end;
     gap: 26px;
   }
-  body #mainFicheLogement header .conteneur-header-logo-nav .nav-header a {
+  #mainFicheLogement header .conteneur-header-logo-nav .nav-header a {
     text-decoration: none;
     color: black;
   }
-  body #mainFicheLogement #carrousel {
+  #mainFicheLogement #carrousel {
     width: 100%;
     height: 255px;
     position: relative;
   }
-  body #mainFicheLogement #carrousel img {
+  #mainFicheLogement #carrousel img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -1082,7 +1130,7 @@ body {
        object-position: center;
     border-radius: 10px;
   }
-  body #mainFicheLogement #carrousel button {
+  #mainFicheLogement #carrousel button {
     position: absolute;
     width: 24px;
     height: 255px;
@@ -1096,30 +1144,30 @@ body {
     z-index: 1;
     font-size: 24px;
   }
-  body #mainFicheLogement #carrousel #carrouselPrevImg {
+  #mainFicheLogement #carrousel #carrouselPrevImg {
     left: 10px;
   }
-  body #mainFicheLogement #carrousel #carrouselNextImg {
+  #mainFicheLogement #carrousel #carrouselNextImg {
     right: 10px;
   }
-  body #mainFicheLogement #titreEtLocalisation {
+  #mainFicheLogement #titreEtLocalisation {
     max-width: 335px;
     max-height: 73px;
     margin-top: 20px;
   }
-  body #mainFicheLogement #titreEtLocalisation h1 {
+  #mainFicheLogement #titreEtLocalisation h1 {
     font-weight: 500;
     font-size: 18px;
     color: #FF6060;
     margin-bottom: 10px;
   }
-  body #mainFicheLogement #titreEtLocalisation p {
+  #mainFicheLogement #titreEtLocalisation p {
     font-weight: 500;
     font-size: 14px;
     color: #000;
     margin-bottom: 10px;
   }
-  body #mainFicheLogement #etoilesHost {
+  #mainFicheLogement #etoilesHost {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1128,7 +1176,7 @@ body {
             align-items: center;
     margin-top: 20px;
   }
-  body #mainFicheLogement #etoilesHost #noteEtoile {
+  #mainFicheLogement #etoilesHost #noteEtoile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1141,22 +1189,22 @@ body {
     margin-bottom: 10px;
     width: 100%;
   }
-  body #mainFicheLogement #etoilesHost #noteEtoile #etoiles {
+  #mainFicheLogement #etoilesHost #noteEtoile #etoiles {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  body #mainFicheLogement #etoilesHost #noteEtoile #etoiles .filledStar {
+  #mainFicheLogement #etoilesHost #noteEtoile #etoiles .filledStar {
     color: #FF6060;
     font-size: 24px;
     margin: 5px;
   }
-  body #mainFicheLogement #etoilesHost #noteEtoile #etoiles .emptyStar {
+  #mainFicheLogement #etoilesHost #noteEtoile #etoiles .emptyStar {
     color: #e3e3e3;
     font-size: 24px;
     margin: 5px;
   }
-  body #mainFicheLogement #etoilesHost #hostInfo {
+  #mainFicheLogement #etoilesHost #hostInfo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1169,21 +1217,21 @@ body {
             align-items: center;
     gap: 10px;
   }
-  body #mainFicheLogement #etoilesHost #hostInfo img {
+  #mainFicheLogement #etoilesHost #hostInfo img {
     width: 32px;
     height: 32px;
     border-radius: 50px;
   }
-  body #mainFicheLogement #etoilesHost #hostInfo p {
+  #mainFicheLogement #etoilesHost #hostInfo p {
     font-weight: 500;
     font-size: 18px;
     text-align: right;
     color: #FF6060;
   }
-  body #mainFicheLogement #infoTags {
+  #mainFicheLogement #infoTags {
     padding-top: 20px;
   }
-  body #mainFicheLogement #infoTags #tags {
+  #mainFicheLogement #infoTags #tags {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1191,7 +1239,7 @@ body {
         flex-wrap: wrap;
     gap: 10px;
   }
-  body #mainFicheLogement #infoTags #tags span {
+  #mainFicheLogement #infoTags #tags span {
     background-color: #FF6060;
     color: white;
     padding: 5px 15px;
@@ -1200,7 +1248,7 @@ body {
     font-size: 14px;
     padding: 3px 25px 3px 25px;
   }
-  body #mainFicheLogement #descriptionEquipementLogement {
+  #mainFicheLogement #descriptionEquipementLogement {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1212,7 +1260,7 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  body #mainFicheLogement #descriptionEquipementLogement .collapseSection .collapseHeader {
+  #mainFicheLogement #descriptionEquipementLogement .collapseSection .collapseHeader {
     width: 100%;
     background-color: #FF6060;
     color: white;
@@ -1225,42 +1273,43 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  body #mainFicheLogement #descriptionEquipementLogement .collapseSection .collapseHeader span {
+  #mainFicheLogement #descriptionEquipementLogement .collapseSection .collapseHeader span {
     padding-left: 10px;
     padding-right: 10px;
   }
-  body #mainFicheLogement #descriptionEquipementLogement .collapseSection .collapseHeader .flecheOuverture {
+  #mainFicheLogement #descriptionEquipementLogement .collapseSection .collapseHeader .flecheOuverture {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
   }
-  body #mainFicheLogement #descriptionEquipementLogement .collapseSection .collapseContent ul li {
+  #mainFicheLogement #descriptionEquipementLogement .collapseSection .collapseContent ul li {
     list-style-type: none;
   }
-  footer {
-    background-color: black;
-    color: white;
-    width: 100%;
-    height: 209px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  footer .kasaLogo {
-    color: white;
-    width: 210px;
-    height: 68px;
-  }
 }
+footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 209px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .kasaLogo {
+  color: white;
+  width: 210px;
+  height: 68px;
+}
+
 @media (min-width: 992px) {
   body {
     width: 100%;

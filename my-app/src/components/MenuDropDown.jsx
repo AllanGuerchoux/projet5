@@ -16,9 +16,16 @@ function DropdownMenu() {
             onClick={() => toggleMenu(item.id)} 
             className="dropdown-button"
           >
-            <span>{item.title}</span> <span className='fleche'>{"❮"}</span>
+            <span>{item.title}</span> 
+            <span 
+              className={`fleche ${openItemId === item.id ? 'rotate' : ''}`}
+            >
+              {"❮"}
+            </span>
           </button>
-          {openItemId === item.id && <div>{item.content}</div>}
+          <div className={`collapseText ${openItemId === item.id ? 'open' : ''}`}>
+            <div className="content">{item.content}</div>
+          </div>
         </div>
       ))}
     </div>

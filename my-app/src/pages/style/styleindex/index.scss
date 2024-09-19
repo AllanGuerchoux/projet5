@@ -214,10 +214,34 @@ body{
                     padding-left: 10px;
                     padding-right: 10px;
                 }
-                .flecheOuverture{
+                .fleche{
+                    display: inline-block;
                     transform: rotate(90deg);
+                    transition: transform 0.3s ease;
+                    &.rotate {
+                        transform: rotate(-90deg);
+                      }
                 }
+
             }
+            .collapseText {
+                overflow: hidden;
+                max-height: 0;
+                transition: max-height 0.5s ease, padding 0.5s ease;
+              
+                // Lorsque ouvert
+                &.open {
+                  max-height: 500px; // Ajustez cette valeur pour le contenu complet
+                  padding: 10px 0;  // Padding ajouté quand ouvert
+                  .content{
+                    opacity: 1;
+                    background-color:#f6f6f6 ;
+                    border-radius: 5px;
+                  }
+                }
+              }
+              
+              
         }
     }
     #main404{
@@ -679,9 +703,32 @@ body{
                     padding-left: 10px;
                     padding-right: 10px;
                 }
-                .flecheOuverture{
+                .fleche{
+                    display: inline-block;
                     transform: rotate(90deg);
+                    transition: transform 0.3s ease;
+                    &.rotate {
+                        transform: rotate(-90deg);
+                      }
                 }
+
+            }
+            .collapseText {
+                overflow: hidden;
+                max-height: 0;
+                transition: max-height 0.5s ease, padding 0.5s ease;
+              
+                // Lorsque ouvert
+                &.open {
+                  max-height: 500px; // Ajustez cette valeur pour le contenu complet
+                  padding: 10px 0;  // Padding ajouté quand ouvert
+                  .content{
+                    opacity: 1;
+                    background-color:#f6f6f6 ;
+                    border-radius: 5px;
+                  }
+                }
+              }
             }
         }
     }
@@ -950,7 +997,7 @@ body{
             }
         }   
        
-}
+
 @media (min-width: 992px) {   
     body{
         width: 100%;
