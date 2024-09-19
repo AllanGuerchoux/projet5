@@ -38,7 +38,7 @@ const DescriptionEquipementLogement = ({ description, equipments }) => {
                     <span className={` flecheOuverture arrow ${isEquipmentsOpen ? 'rotate' : ''}`}>❮</span>
                 </div>
                 {isEquipmentsOpen && (
-                    <div className="collapsContent">
+                    <div className="collapseContent">
                         <ul>
                             {equipments.map((equipment, index) => (
                                 <li key={index}>{equipment}</li>

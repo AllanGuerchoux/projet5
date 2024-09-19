@@ -9,6 +9,8 @@ import TitreEtLocalisation from '../components/componentsLogement/TitreEtLocalis
 import DescriptionEquipementLogement from '../components/componentsLogement/DescriptionEquipementLogement';
 import InfoLogement from '../components/componentsLogement/InfoLogement';
 import HostInfo from '../components/componentsLogement/HostInfo';
+
+
 const FicheLogement = () => {
     const { id } = useParams(); // Extraction de l'ID depuis l'URL
     const logement = Data.find(item => item.id === id); // Recherche du logement correspondant
@@ -24,14 +26,18 @@ const FicheLogement = () => {
             <Header />
             <LogementCaroussel
             pictures={logement.pictures}/>
-
+            <section id='infoLocalisationHostLogement'>
+            <div id='infoGauche'>
             <TitreEtLocalisation 
             title={logement.title}
             location={logement.location}
             />
             <InfoLogement 
             tags={logement.tags}/>
+            </div>
+            <div id='infoDroite'>
             <div id='etoilesHost'>
+             
             <NoteEtoile 
                 hostName={logement.host.name} 
                 hostPicture={logement.host.picture}
@@ -42,6 +48,8 @@ const FicheLogement = () => {
             hostPicture={logement.host.picture}
             />
             </div>
+            </div>  
+            </section>
             <DescriptionEquipementLogement 
             description={logement.description} 
             equipments={logement.equipments}

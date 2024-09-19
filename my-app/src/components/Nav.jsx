@@ -4,7 +4,7 @@ import '../pages/style/styleindex/index.css'
 const Nav = () => {
     return (
         <nav className='nav-header'>
-            <a href='home'>ACCEUIL</a>
+            <Link to ='/home'>ACCEUIL</Link>
             <Link to ='/a_propos'> A PROPOS</Link>
         </nav>
     );

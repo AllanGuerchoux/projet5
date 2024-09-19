@@ -11,20 +11,30 @@
     margin: 0;
     padding: 0;
 }
-  
+body{
+    height: 100%; /* Assure que le body occupe toute la hauteur de la page */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
 #pageCenter{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh
+    
 }
-@media only screen and (min-width: 480px){
+@media only screen and  (max-width: 480px){
     body{
         font-family: Montserrat;
         gap: 27px;
     
     #mainHome{
+        margin: 20px;
         padding: 20px;
+        box-sizing: border-box;
         display: flex;       
         flex-direction: column;
         header{ 
@@ -100,6 +110,14 @@
                 margin-bottom: 20px;
                 border-radius: 8px;
                 overflow: hidden;
+                .cardLink{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: flex-end;
+                    margin-bottom: 20px;
+                    border-radius: 8px;
+                    overflow: hidden;
                 .cardTitre{    
                     padding-bottom: 20px;
                     width: 45%;       
@@ -126,12 +144,15 @@
                     object-position: center;
                     border-radius: 8px;
                     
-                }
+                }}
             }
         }}
         #mainApropos{
+            width: 100%;
+            margin: 20px;
             padding: 20px;
-            
+            box-sizing: border-box;
+            height: 89.9vh;
             header{ 
                 display:flex;
                 width: 100%;
@@ -172,7 +193,7 @@
                 border-radius: 10px;
             }
         }
-        #aProaProposCollapse{
+        #aProposCollapse{
             display: flex;
             flex-direction: column;
             width: 100%;            
@@ -200,6 +221,7 @@
         }
     }
     #main404{
+        margin: 20px;
         padding: 20px;
         display: flex;
         flex-direction: column;
@@ -264,6 +286,7 @@
         }
     }
     #mainFicheLogement{
+        margin: 20px;
         padding: 20px;
         display: flex;       
         flex-direction: column;
@@ -428,6 +451,482 @@
                         transform: rotate(90deg);
                     }
                 }
+            }.collapseContent{
+                background-color: #f6f6f6;
+                border-radius: 5px;
+                padding: 10px;
+                ul{
+                    li{
+                        list-style-type: none;
+                    }
+                }
+            }
+            
+         }
+
+    }
+}
+    footer{
+        background-color: black;
+        color: white;
+        width: 100%;
+        height: 209px;
+        @include flexJustifyAlignCenter;
+        flex-direction: column;
+
+
+            .kasaLogo {
+                color: white;
+
+                width: 210px;
+                height: 68px
+            }
+        }   
+       
+}
+
+@media only screen and (min-width: 480px){
+    
+    body{
+        font-family: Montserrat;
+        gap: 27px;
+    
+    #mainHome{
+        margin: 20px;
+        padding: 20px;
+        display: flex;       
+        flex-direction: column;
+        margin: 20px;
+        box-sizing: border-box;
+        header{ 
+            display:flex;
+            width: 100%;
+            margin-bottom: 27px;
+            .conteneur-header-logo-nav{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                .kasaLogo{
+                    width: 145px;
+                    height: 48px;
+                }
+                .nav-header{
+                    display: flex;
+                    gap: 0;
+                    width: 50%;
+                    align-items: center;
+                    justify-content: flex-end;
+                    gap: 26px ;
+                    a{
+                        text-decoration: none;
+                        color: black;
+    
+                    }
+                    
+                }
+            }
+        }
+        #sectionTitre{
+            height: 111px;
+            margin-bottom: 20px;
+            padding: 0;
+        .zoneTitre{
+            margin-bottom: 10px;          
+            height: 100%;
+            @include flexJustifyAlignCenter;
+            border-radius: 8px;
+            overflow: hidden;
+            
+        
+        img{
+            z-index: auto;
+            width: 100%;
+            height: 934px;
+            object-fit: cover;
+            object-position: center;
+            filter: brightness(50%);
+    
+        }
+        h1{
+            z-index: 1;
+            font-size: 24px;
+            font-weight:700;
+            line-height: 24px;
+            position: absolute;
+            color: white;
+        }
+    }}
+        #gallery{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            .cardLogement{
+                width: 100%;
+                height: 255px;
+                display: flex;
+                align-items: flex-end;
+                margin-bottom: 20px;
+                border-radius: 8px;
+                overflow: hidden;
+                .cardLink{width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: flex-end;
+                    margin-bottom: 20px;
+                    border-radius: 8px;
+                    overflow: hidden;
+                .cardTitre{    
+                    padding-bottom: 20px;
+                    width: 45%;       
+                    height: 20%;  
+                    display: flex;
+                    align-items: flex-end;
+                    padding-left: 20px;
+
+                    color: white;
+                    font-size: 18px;
+                    text-align: left;
+                    z-index: 1;
+                    position: absolute;
+                    text-shadow:-1px -1px 0 black,  
+                                1px -1px 0 black,
+                                -1px 1px 0 black,
+                                1px 1px 0 black;
+                }
+                img{
+                    z-index: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 8px;
+                    
+                }}
+            }
+        }}
+        #mainApropos{
+            width: 100%;
+            margin: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 89.9vh;
+            header{ 
+                display:flex;
+                width: 100%;
+                margin-bottom: 27px;
+                .conteneur-header-logo-nav{
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    .kasaLogo{
+                        width: 145px;
+                        height: 48px;
+                    }
+                    .nav-header{
+                        display: flex;
+                        gap: 0;
+                        width: 50%;
+                        align-items: center;
+                        justify-content: flex-end;
+                        gap: 26px ;
+                        a{
+                            text-decoration: none;
+                            color: black;
+        
+                        }
+                        
+                    }
+                }
+            }
+        #aProposCard{
+            width: 100%;
+            margin-bottom: 20px;
+            img{
+                width: 100%;
+                height: 111px;
+                object-fit: cover;
+                object-position: center;
+                filter: brightness(50%);
+                border-radius: 10px;
+            }
+        }
+        #aProposCollapse{
+            display: flex;
+            flex-direction: column;
+            width: 100%;            
+            height: auto;
+            gap: 20px;
+            button{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 30px;
+                color: white;
+                background-color: #FF6060;
+                border-radius: 5px;
+                border: none;
+                gap: 20px;
+                span{
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                .flecheOuverture{
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+    #main404{
+        margin: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 89.9vh;
+        width: 100%;
+        header{ 
+            display:flex;
+            width: 100%;
+            margin-bottom: 117px;
+            .conteneur-header-logo-nav{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                height: 50px;
+                .kasaLogo{
+                    width: 145px;
+                    height: 48px;
+                }
+                .nav-header{
+                    display: flex;
+                    gap: 0;
+                    width: 50%;
+                    align-items: center;
+                    justify-content: flex-end;
+                    gap: 26px ;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        margin: 0;
+                    }
+                    
+                }
+            }
+        }
+        .codeErreur{
+            width: 198px;
+            height: 99px;
+            @include flexJustifyAlignCenter;
+            font-size: 96px;
+            font-weight: 700;
+            gap: 60px;
+            color: #FF6060;
+            margin-bottom: 117px;
+        }
+        .codeErreurDescription{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            width: 260px;
+            height: auto;
+            color: #FF6060;
+            margin-bottom: 117px;
+        }
+
+        a{
+            color: black;
+            font-weight: 500;
+            font-size: 14px;
+            margin-bottom:117px ;
+        }
+    }
+    #mainFicheLogement{
+        margin: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;       
+        flex-direction: column;
+        height: 89.9vh;
+        header{ 
+            display:flex;
+            width: 100%;
+            margin-bottom: 27px;
+            .conteneur-header-logo-nav{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                .kasaLogo{
+                    width: 145px;
+                    height: 48px;
+                }
+                .nav-header{
+                    display: flex;
+                    gap: 0;
+                    width: 50%;
+                    align-items: center;
+                    justify-content: flex-end;
+                    gap: 26px ;
+                    a{
+                        text-decoration: none;
+                        color: black;
+    
+                    }
+                    
+                }
+            }
+        }
+        #carrousel{
+            width: 100%;
+            height: 255px;
+            position: relative;
+            
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 10px;
+            }
+            button{
+                position: absolute;
+                width: 24px;
+                height: 255px;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: rgba(0, 0, 0, 0);
+                color: white;
+                border: none;
+                cursor: pointer;
+                z-index: 1;
+                font-size: 24px;
+            }
+            #carrouselPrevImg{
+                left: 10px;
+            }
+            #carrouselNextImg{
+                right: 10px;
+            }
+        }
+        #titreEtLocalisation{
+            max-width: 335px;
+            max-height: 73px;
+            margin-top: 20px;
+            h1{
+                font-weight: 500;
+                font-size: 18px;
+                color: #FF6060;
+                margin-bottom: 10px;
+            }
+            p{
+                font-weight: 500;
+                font-size: 14px;
+                color: #000;
+                margin-bottom: 10px;
+            }
+        }
+        #etoilesHost{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+         #noteEtoile{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            width: 100%;
+            #etoiles{
+                display: flex;
+                .filledStar{
+                    color :#FF6060;
+                    font-size: 24px;
+                    margin: 5px;
+                }
+                .emptyStar{
+                    color: #e3e3e3;
+                    font-size: 24px;
+                    margin: 5px;
+                }
+            }
+            
+         }
+         #hostInfo{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            gap: 10px;
+            img{
+                width: 32px;
+                height: 32px;
+                border-radius: 50px;
+            }
+            p{
+                font-weight: 500;
+                font-size: 18px;
+                text-align: right;
+                color: #FF6060;
+            }
+        }}
+         #infoTags{
+            padding-top: 20px;
+            #tags{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                span{
+                    background-color: #FF6060;
+                    color: white;
+                    padding: 5px 15px;
+                    border-radius: 10px;
+                    font-weight: 700;
+                    font-size: 14px;
+                    padding: 3px 25px 3px 25px;
+                }
+            }
+
+         }
+        
+         #descriptionEquipementLogement{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            .collapseSection{
+                .collapseHeader{
+                    width: 100%;
+                    background-color: #FF6060;
+                    color: white;
+                    border-radius: 5px;
+                    padding: 10px 0 10px 0;
+                    display: flex;
+                    justify-content: space-between;
+                    span{
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                    .flecheOuverture{
+                        transform: rotate(90deg);
+                    }
+                }
+                .collapseContent{
+                    ul{
+                        li{
+                            list-style-type: none;
+                        }
+                    }
+                }
             }
             
          }
@@ -466,6 +965,7 @@
                 align-items: center;
                 padding: 0;
                 margin: 20px;
+                padding: 20px;
             
         
             header{ 
@@ -548,6 +1048,182 @@
                 }
                 
             }
+            #mainApropos{
+                width: 100%;
+                margin: 20px;
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                height: 89.9vh;
+                header{ 
+                    display:flex;
+                    width: 100%;
+                    max-width: 1240px;
+                    margin-bottom: 27px;
+                    
+                    .conteneur-header-logo-nav{
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+                        .kasaLogo{
+                            width: 210px;
+                            height: 68px;
+                        }
+                        .nav-header{
+                            display: flex;
+                            gap: 0;
+                            width: 50%;
+                            align-items: center;
+                            justify-content: flex-end;
+                            gap: 26px ;
+                        a{
+                                text-decoration: none;
+                                color: black;
+                                font-weight: 500;
+                                font-size: 24px;
+            
+                            }
+                            
+                        }
+                    }
+                }
+                #aProposCard{
+                    max-width: 1240px;
+                    height: 223px ;
+                    img{
+                        width: 100%;
+                        height: 223px;
+                    }
+                }
+                #aProposCollapse{
+                    max-width: 1023px;
+                    margin-bottom: 20px;
+                    display: flex;
+                    align-items: center;
+                    button{
+                        width: 1023px
+                    }
+                }
+            }
+            #mainFicheLogement{
+                max-width: 1240px;
+                height: 89.9vh;
+                display: flex;
+                width: 100%;
+                margin: 20px;
+                padding: 20px;
+                header{ 
+                    display:flex;
+                    width: 100%;
+                    max-width: 1240px;
+                    margin-bottom: 27px;
+                    
+                    .conteneur-header-logo-nav{
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+                        .kasaLogo{
+                            width: 210px;
+                            height: 68px;
+                        }
+                        .nav-header{
+                            display: flex;
+                            gap: 0;
+                            width: 50%;
+                            align-items: center;
+                            justify-content: flex-end;
+                            gap: 26px ;
+                        a{
+                                text-decoration: none;
+                                color: black;
+                                font-weight: 500;
+                                font-size: 24px;
+            
+                            }
+                            
+                        }
+                    }
+                }
+                #carrousel{
+                    height: 415px;
+                    button{
+                        font-size: 79px;
+                        width: 50px;
+                    }
+                }
+                section{   
+                display: flex;
+                width: 100%;
+                height: 200px;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                #infoGauche{
+                    width: 70%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    flex-wrap: nowrap;
+                #titreEtLocalisation{
+                    margin-bottom: 40px;
+                    max-width: 635px;
+                    height: 77px;
+                   h1{
+                    font-weight: 500;
+                    font-size: 36px;
+                   }
+                   p{
+                    font-size: 18px;
+                    ;
+                   }
+                }
+                #infoTags{
+                    
+                    width: 75%;
+                    #tags{
+                        
+                        width: 100%;
+                    }
+                }}}
+                #infoDroite{
+                    width: 30%;
+                    display: flex;
+                    height: 100%;
+                    justify-content: flex-end;
+                #etoilesHost{
+                    display: flex;
+                    margin: 0;
+                    flex-direction: column-reverse;
+                    justify-content: space-evenly;
+                    align-items: flex-end;
+                    width: 50%;
+                    #noteEtoile{
+                        width: 196px;
+                        height: 36px;
+                        .etoiles{
+                            .filledStar{
+                                font-size: 36px;
+                                margin: 5px;
+                            }
+                            .emptyStar{
+                                font-size: 36px;
+                                margin: 5px;
+                            }
+                        }
+                    }
+                    #hostInfo{
+                        height: 64px;
+                        img{
+                            width: 64px;
+                            height: 64px;
+                        }
+                    }
+                }}
+                
+            }
         }
+        
     }
 }
