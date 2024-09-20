@@ -451,43 +451,58 @@ body{
             }
 
          }
-        
-         #descriptionEquipementLogement{
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            .collapseSection{
-                .collapseHeader{
-                    width: 100%;
-                    background-color: #FF6060;
-                    color: white;
-                    border-radius: 5px;
-                    padding: 10px 0 10px 0;
-                    display: flex;
-                    justify-content: space-between;
-                    span{
-                        padding-left: 10px;
-                        padding-right: 10px;
-                    }
-                    .flecheOuverture{
-                        transform: rotate(90deg);
-                    }
-                }
-            }.collapseContent{
-                background-color: #f6f6f6;
+        #collapseSection{
+            width: 100%;
+            button{
+                width: 100%;
+                border: none;
                 border-radius: 5px;
-                padding: 10px;
-                ul{
-                    li{
-                        list-style-type: none;
-                    }
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 10px 0 10px;
+                height: 30px;
+                color: white;
+                background-color: #FF6060;
+                .fleche{
+                    display: inline-block;
+                    transform: rotate(90deg);
+                    transition: transform 0.3s ease;
+                    &.rotate {
+                        transform: rotate(-90deg);
+                      }
                 }
             }
+         .collapseText {
+            overflow: hidden;
+            max-height: 0;
             
-         }
-
+            transition: max-height 0.5s ease, padding 0.5s ease;
+          
+            &.open {
+              max-height: 500px; // Ajustez cette valeur pour le contenu complet
+              padding: 10px 0; // Ajouter du padding lorsque le collapse est ouvert
+          
+              .content {
+                opacity: 1;
+                background-color: #f6f6f6;
+                border-radius: 5px;
+                transition: opacity 0.3s ease;
+              }
+          
+              // Appliquer les styles directement ici pour <ul>
+              background-color: #f6f6f6; // Appliquer à la liste
+              border-radius: 5px; // Appliquer à la liste
+              padding: 10px; // Padding pour la liste entière
+          
+              li {
+                background-color: #f6f6f6; // Fond pour chaque élément
+                border-radius: 5px; // Arrondi pour chaque élément
+                
+              }
+            }
+          }
+        }
     }
 }
     footer{
@@ -944,39 +959,11 @@ body{
 
          }
         
-         #descriptionEquipementLogement{
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            .collapseSection{
-                .collapseHeader{
-                    width: 100%;
-                    background-color: #FF6060;
-                    color: white;
-                    border-radius: 5px;
-                    padding: 10px 0 10px 0;
-                    display: flex;
-                    justify-content: space-between;
-                    span{
-                        padding-left: 10px;
-                        padding-right: 10px;
-                    }
-                    .flecheOuverture{
-                        transform: rotate(90deg);
-                    }
-                }
-                .collapseContent{
-                    ul{
-                        li{
-                            list-style-type: none;
-                        }
-                    }
-                }
-            }
+         
             
-         }
+            
+            
+         
 
     }
 }

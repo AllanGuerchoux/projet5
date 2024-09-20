@@ -1,54 +1,42 @@
-import React, { useState } from 'react';
-
+import React, { useState } from "react";
 
 const DescriptionEquipementLogement = ({ description, equipments }) => {
-    // Hook d'état pour gérer l'ouverture des collapses
-    const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
-    const [isEquipmentsOpen, setIsEquipmentsOpen] = useState(false);
+  const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
+  const [isEquipementsOpen, setIsEquipementsOpen] = useState(false);
 
-    // Fonction pour gérer l'ouverture/fermeture de la description
-    const toggleDescription = () => {
-        setIsDescriptionOpen(!isDescriptionOpen);
-    };
+  const toggleDescription = () => {
+    setIsDescriptionOpen(!isDescriptionOpen);
+  };
 
-    // Fonction pour gérer l'ouverture/fermeture des équipements
-    const toggleEquipments = () => {
-        setIsEquipmentsOpen(!isEquipmentsOpen);
-    };
+  const toggleEquipements = () => {
+    setIsEquipementsOpen(!isEquipementsOpen);
+  };
 
-    return (
-        <div id="descriptionEquipementLogement">
-            {/* Collapse pour la description */}
-            <div className="collapseSection">
-                <div className="collapseHeader" onClick={toggleDescription}>
-                    <span>Description</span>
-                    <span className={` flecheOuverture arrow ${isDescriptionOpen ? 'rotate' : ''}`}>❮</span>
-                </div>
-                {isDescriptionOpen && (
-                    <div className="collapseContent">
-                        <p>{description}</p>
-                    </div>
-                )}
-            </div>
+  return (
+    <section id="collapseSection">
+      {/* Collapse pour la description avec la flèche */}
+      <button onClick={toggleDescription} className="collapseButton">
+        Description <span className={`fleche ${isDescriptionOpen ? 'rotate' : ''}`}>❮</span>
+      </button>
+      <div className={`collapseText ${isDescriptionOpen ? 'open' : ''}`}>
+        <div className="content">{description}</div>
+      </div>
 
-            {/* Collapse pour les équipements */}
-            <div className="collapseSection">
-                <div className="collapseHeader" onClick={toggleEquipments}>
-                    <span>Équipements</span>
-                    <span className={` flecheOuverture arrow ${isEquipmentsOpen ? 'rotate' : ''}`}>❮</span>
-                </div>
-                {isEquipmentsOpen && (
-                    <div className="collapseContent">
-                        <ul>
-                            {equipments.map((equipment, index) => (
-                                <li key={index}>{equipment}</li>
-                            ))}
-                        </ul>
-                    </div>
-                )}
-            </div>
-        </div>
-    );
+      {/* Collapse pour les équipements avec la flèche */}
+      <button onClick={toggleEquipements} className="collapseButton">
+        Équipements <span className={`fleche ${isEquipementsOpen ? 'rotate' : ''}`}>❮</span>
+      </button>
+      <ul className={`collapseText ${isEquipementsOpen ? 'open' : ''}`}>
+        {equipments && equipments.length > 0 ? (
+          equipments.map((equipement, index) => (
+            <li key={index}>{equipement}</li>
+          ))
+        ) : (
+          <li>Aucun équipement disponible</li>
+        )}
+      </ul>
+    </section>
+  );
 };
 
 export default DescriptionEquipementLogement;
