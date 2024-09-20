@@ -8,7 +8,7 @@ const Page404 = () => {
             <main id='main404'>
                 <Header />
                 <p className='codeErreur'>404</p>
-                <p className='codeErreurDescription'>oups! la page que<br></br>vous demandez n'existe pas.</p>
+                <p className='codeErreurDescription'>oups! la page que <br></br>vous demandez n'existe pas.</p>
                 <a href='Index.jsx'>Retourner sur la page d'acceuil</a>
             </main>
             <Footer />
@@ -17,3 +17,4 @@ const Page404 = () => {
 };
 
 export default Page404;
+

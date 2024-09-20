@@ -55,6 +55,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+    height: 48px;
     margin-bottom: 27px;
   }
   body #mainHome header .conteneur-header-logo-nav {
@@ -74,8 +75,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 0;
     width: 50%;
+    min-width: 190px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -87,6 +88,8 @@ body {
   body #mainHome header .conteneur-header-logo-nav .nav-header a {
     text-decoration: none;
     color: black;
+    font-weight: 500;
+    font-size: 12px;
   }
   body #mainHome #sectionTitre {
     height: 111px;
@@ -203,13 +206,14 @@ body {
     padding: 20px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    height: 89.9vh;
+    height: 100vh;
   }
   body #mainApropos header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+    height: 48px;
     margin-bottom: 27px;
   }
   body #mainApropos header .conteneur-header-logo-nav {
@@ -229,8 +233,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 0;
     width: 50%;
+    min-width: 190px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -242,6 +246,8 @@ body {
   body #mainApropos header .conteneur-header-logo-nav .nav-header a {
     text-decoration: none;
     color: black;
+    font-weight: 500;
+    font-size: 12px;
   }
   body #mainApropos #aProposCard {
     width: 100%;
@@ -330,20 +336,18 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-line-pack: center;
-        align-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    gap: 133px;
   }
   body #main404 header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    margin-bottom: 117px;
+    height: 48px;
+    margin-bottom: 27px;
   }
   body #main404 header .conteneur-header-logo-nav {
     display: -webkit-box;
@@ -353,7 +357,6 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 50px;
   }
   body #main404 header .conteneur-header-logo-nav .kasaLogo {
     width: 145px;
@@ -363,8 +366,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 0;
     width: 50%;
+    min-width: 190px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -376,44 +379,21 @@ body {
   body #main404 header .conteneur-header-logo-nav .nav-header a {
     text-decoration: none;
     color: black;
-    margin: 0;
+    font-weight: 500;
+    font-size: 12px;
   }
   body #main404 .codeErreur {
-    width: 198px;
-    height: 99px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 96px;
     font-weight: 700;
-    gap: 60px;
+    font-size: 96px;
     color: #FF6060;
-    margin-bottom: 117px;
   }
   body #main404 .codeErreurDescription {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     text-align: center;
-    width: 260px;
-    height: auto;
+    font-size: 18px;
     color: #FF6060;
-    margin-bottom: 117px;
   }
   body #main404 a {
-    color: black;
-    font-weight: 500;
-    font-size: 14px;
-    margin-bottom: 117px;
+    color: #000;
   }
   body #mainFicheLogement {
     margin: 20px;
@@ -450,8 +430,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 0;
     width: 50%;
+    min-width: 190px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -463,6 +443,8 @@ body {
   body #mainFicheLogement header .conteneur-header-logo-nav .nav-header a {
     text-decoration: none;
     color: black;
+    font-weight: 500;
+    font-size: 12px;
   }
   body #mainFicheLogement #carrousel {
     width: 100%;
@@ -598,8 +580,19 @@ body {
   }
   body #mainFicheLogement #collapseSection {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
   }
-  body #mainFicheLogement #collapseSection button {
+  body #mainFicheLogement #collapseSection .collapseArea {
+    margin-top: 20px;
+  }
+  body #mainFicheLogement #collapseSection .collapseArea button {
     width: 100%;
     border: none;
     border-radius: 5px;
@@ -617,7 +610,7 @@ body {
     color: white;
     background-color: #FF6060;
   }
-  body #mainFicheLogement #collapseSection button .fleche {
+  body #mainFicheLogement #collapseSection .collapseArea button .fleche {
     display: inline-block;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
@@ -626,31 +619,30 @@ body {
     transition: transform 0.3s ease;
     transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   }
-  body #mainFicheLogement #collapseSection button .fleche.rotate {
+  body #mainFicheLogement #collapseSection .collapseArea button .fleche.rotate {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
   }
-  body #mainFicheLogement #collapseSection .collapseText {
+  body #mainFicheLogement #collapseSection .collapseArea .collapseText {
     overflow: hidden;
     max-height: 0;
     -webkit-transition: max-height 0.5s ease, padding 0.5s ease;
     transition: max-height 0.5s ease, padding 0.5s ease;
   }
-  body #mainFicheLogement #collapseSection .collapseText.open {
+  body #mainFicheLogement #collapseSection .collapseArea .collapseText.open {
     max-height: 500px;
     padding: 10px 0;
     background-color: #f6f6f6;
     border-radius: 5px;
-    padding: 10px;
   }
-  body #mainFicheLogement #collapseSection .collapseText.open .content {
+  body #mainFicheLogement #collapseSection .collapseArea .collapseText.open .content {
     opacity: 1;
     background-color: #f6f6f6;
     border-radius: 5px;
     -webkit-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
   }
-  body #mainFicheLogement #collapseSection .collapseText.open li {
+  body #mainFicheLogement #collapseSection .collapseArea .collapseText.open li {
     background-color: #f6f6f6;
     border-radius: 5px;
   }
@@ -865,7 +857,7 @@ body {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    height: 89.9vh;
+    height: 100vh;
   }
   body #mainApropos header {
     display: -webkit-box;
@@ -985,8 +977,6 @@ body {
   #main404 {
     margin: 20px;
     padding: 20px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -994,22 +984,18 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-line-pack: center;
-        align-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    height: 89.9vh;
-    width: 100%;
+    gap: 133px;
   }
   #main404 header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    margin-bottom: 117px;
+    height: 48px;
+    margin-bottom: 27px;
   }
   #main404 header .conteneur-header-logo-nav {
     display: -webkit-box;
@@ -1019,7 +1005,6 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    height: 50px;
   }
   #main404 header .conteneur-header-logo-nav .kasaLogo {
     width: 145px;
@@ -1029,8 +1014,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 0;
     width: 50%;
+    min-width: 190px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1042,44 +1027,21 @@ body {
   #main404 header .conteneur-header-logo-nav .nav-header a {
     text-decoration: none;
     color: black;
-    margin: 0;
+    font-weight: 500;
+    font-size: 12px;
   }
   #main404 .codeErreur {
-    width: 198px;
-    height: 99px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 96px;
     font-weight: 700;
-    gap: 60px;
+    font-size: 96px;
     color: #FF6060;
-    margin-bottom: 117px;
   }
   #main404 .codeErreurDescription {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     text-align: center;
-    width: 260px;
-    height: auto;
+    font-size: 18px;
     color: #FF6060;
-    margin-bottom: 117px;
   }
   #main404 a {
-    color: black;
-    font-weight: 500;
-    font-size: 14px;
-    margin-bottom: 117px;
+    color: #000;
   }
   #mainFicheLogement {
     margin: 20px;
@@ -1093,7 +1055,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 89.9vh;
+    height: 100vh;
   }
   #mainFicheLogement header {
     display: -webkit-box;
@@ -1265,6 +1227,74 @@ body {
     font-size: 14px;
     padding: 3px 25px 3px 25px;
   }
+  #mainFicheLogement #collapseSection {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+  #mainFicheLogement #collapseSection .collapseArea {
+    margin-top: 20px;
+  }
+  #mainFicheLogement #collapseSection .collapseArea button {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 10px 0 10px;
+    height: 30px;
+    color: white;
+    background-color: #FF6060;
+  }
+  #mainFicheLogement #collapseSection .collapseArea button .fleche {
+    display: inline-block;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  }
+  #mainFicheLogement #collapseSection .collapseArea button .fleche.rotate {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  #mainFicheLogement #collapseSection .collapseArea .collapseText {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: max-height 0.5s ease, padding 0.5s ease;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+  }
+  #mainFicheLogement #collapseSection .collapseArea .collapseText.open {
+    max-height: 500px;
+    padding: 10px 0;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+  }
+  #mainFicheLogement #collapseSection .collapseArea .collapseText.open .content {
+    opacity: 1;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+  }
+  #mainFicheLogement #collapseSection .collapseArea .collapseText.open li {
+    background-color: #f6f6f6;
+    border-radius: 5px;
+  }
 }
 footer {
   background-color: black;
@@ -1420,7 +1450,7 @@ footer .kasaLogo {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 89.9vh;
+    height: 100vh;
   }
   body #root #mainApropos header {
     display: -webkit-box;
@@ -1480,9 +1510,69 @@ footer .kasaLogo {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 30px;
   }
   body #root #mainApropos #aProposCollapse button {
     width: 1023px;
+    height: 54px;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  body #root #main404 {
+    max-width: 1240px;
+    width: 100%;
+  }
+  body #root #main404 header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: 1240px;
+    margin-bottom: 27px;
+  }
+  body #root #main404 header .conteneur-header-logo-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body #root #main404 header .conteneur-header-logo-nav .kasaLogo {
+    width: 210px;
+    height: 68px;
+  }
+  body #root #main404 header .conteneur-header-logo-nav .nav-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0;
+    width: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 26px;
+  }
+  body #root #main404 header .conteneur-header-logo-nav .nav-header a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 24px;
+  }
+  body #root .codeErreur {
+    font-weight: 700;
+    font-size: 288px;
+  }
+  body #root .codeErreurDescription {
+    font-weight: 500;
+    font-size: 36px;
+  }
+  body #root .codeErreurDescription br {
+    display: none;
   }
   body #root #mainFicheLogement {
     max-width: 1240px;
@@ -1636,5 +1726,83 @@ footer .kasaLogo {
   body #root #mainFicheLogement #infoDroite #etoilesHost #hostInfo img {
     width: 64px;
     height: 64px;
+  }
+  body #root #mainFicheLogement #collapseSection {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 10px;
+  }
+  body #root #mainFicheLogement #collapseSection .collapseArea {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 49%;
+    height: 100%;
+  }
+  body #root #mainFicheLogement #collapseSection .collapseArea button {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 10px 0 10px;
+    height: 30px;
+    color: white;
+    background-color: #FF6060;
+  }
+  body #root #mainFicheLogement #collapseSection .collapseArea button .fleche {
+    display: inline-block;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  }
+  body #root #mainFicheLogement #collapseSection .collapseArea button .fleche.rotate {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  body #root #mainFicheLogement #collapseSection .collapseArea .collapseText {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: max-height 0.5s ease, padding 0.5s ease;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+  }
+  body #root #mainFicheLogement #collapseSection .collapseArea .collapseText.open {
+    min-height: 50px;
+    max-height: 500px;
+    padding: 10px 0;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+  }
+  body #root #mainFicheLogement #collapseSection .collapseArea .collapseText.open .content {
+    opacity: 1;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+  }
+  body #root #mainFicheLogement #collapseSection .collapseArea .collapseText.open li {
+    background-color: #f6f6f6;
+    border-radius: 5px;
   }
 }/*# sourceMappingURL=index.css.map */

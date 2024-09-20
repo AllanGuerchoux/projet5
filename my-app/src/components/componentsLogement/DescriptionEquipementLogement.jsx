@@ -15,14 +15,17 @@ const DescriptionEquipementLogement = ({ description, equipments }) => {
   return (
     <section id="collapseSection">
       {/* Collapse pour la description avec la flèche */}
+      <div className="collapseArea">
       <button onClick={toggleDescription} className="collapseButton">
         Description <span className={`fleche ${isDescriptionOpen ? 'rotate' : ''}`}>❮</span>
       </button>
       <div className={`collapseText ${isDescriptionOpen ? 'open' : ''}`}>
         <div className="content">{description}</div>
       </div>
+      </div>
 
       {/* Collapse pour les équipements avec la flèche */}
+      <div className="collapseArea">
       <button onClick={toggleEquipements} className="collapseButton">
         Équipements <span className={`fleche ${isEquipementsOpen ? 'rotate' : ''}`}>❮</span>
       </button>
@@ -35,6 +38,7 @@ const DescriptionEquipementLogement = ({ description, equipments }) => {
           <li>Aucun équipement disponible</li>
         )}
       </ul>
+      </div>
     </section>
   );
 };
