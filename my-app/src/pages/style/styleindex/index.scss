@@ -245,10 +245,10 @@ body{
                 max-height: 0;
                 transition: max-height 0.5s ease, padding 0.5s ease;
               
-                // Lorsque ouvert
+                
                 &.open {
-                  max-height: 500px; // Ajustez cette valeur pour le contenu complet
-                  padding: 10px 0;  // Padding ajouté quand ouvert
+                  max-height: 500px; 
+                  padding: 10px 0;  
                   .content{
                     opacity: 1;
                     background-color:#f6f6f6 ;
@@ -462,8 +462,8 @@ body{
             transition: max-height 0.5s ease, padding 0.5s ease;
           
             &.open {
-              max-height: 500px; // Ajustez cette valeur pour le contenu complet
-              padding: 10px 0; // Ajouter du padding lorsque le collapse est ouvert
+              max-height: 500px; 
+              padding: 10px 0; 
           
               .content {
                 opacity: 1;
@@ -471,15 +471,14 @@ body{
                 border-radius: 5px;
                 transition: opacity 0.3s ease;
               }
-          
-              // Appliquer les styles directement ici pour <ul>
-              background-color: #f6f6f6; // Appliquer à la liste
-              border-radius: 5px; // Appliquer à la liste
-               // Padding pour la liste entière
+
+              background-color: #f6f6f6; 
+              border-radius: 5px; 
+               
           
               li {
-                background-color: #f6f6f6; // Fond pour chaque élément
-                border-radius: 5px; // Arrondi pour chaque élément
+                background-color: #f6f6f6; 
+                border-radius: 5px; 
                 
               }
             }
@@ -716,10 +715,10 @@ body{
                 max-height: 0;
                 transition: max-height 0.5s ease, padding 0.5s ease;
               
-                // Lorsque ouvert
+                
                 &.open {
-                  max-height: 500px; // Ajustez cette valeur pour le contenu complet
-                  padding: 10px 0;  // Padding ajouté quand ouvert
+                  max-height: 500px; 
+                  padding: 10px 0;   
                   .content{
                     opacity: 1;
                     background-color:#f6f6f6 ;
@@ -731,6 +730,7 @@ body{
         }
     }
     #main404{
+        height: 100vh;
         margin: 20px;
         padding: 20px;
         display: flex;       
@@ -931,8 +931,8 @@ body{
             transition: max-height 0.5s ease, padding 0.5s ease;
           
             &.open {
-              max-height: 500px; // Ajustez cette valeur pour le contenu complet
-              padding: 10px 0; // Ajouter du padding lorsque le collapse est ouvert
+              max-height: 500px; 
+              padding: 10px 0; 
           
               .content {
                 opacity: 1;
@@ -941,15 +941,14 @@ body{
                 transition: opacity 0.3s ease;
               }
           
-              // Appliquer les styles directement ici pour <ul>
-              background-color: #f6f6f6; // Appliquer à la liste
-              border-radius: 5px; // Appliquer à la liste
+              
+              background-color: #f6f6f6; 
+              border-radius: 5px; 
               
           
               li {
-                background-color: #f6f6f6; // Fond pour chaque élément
-                border-radius: 5px; // Arrondi pour chaque élément
-                
+                background-color: #f6f6f6; 
+                border-radius: 5px; 
               }
             }
           }
@@ -1080,7 +1079,8 @@ body{
             #main404{
                 max-width: 1240px;
                 width: 100%;
-                @include headermin992
+                @include headermin992;
+                height: 100vh;
             }
             .codeErreur{
                 font-weight: 700;
@@ -1216,8 +1216,8 @@ body{
                   
                     &.open {
                         min-height: 50px;
-                        max-height: 500px; // Ajustez cette valeur pour le contenu complet
-                        padding: 10px 0; // Ajouter du padding lorsque le collapse est ouvert
+                        max-height: 500px; 
+                        padding: 10px 0; 
                   
                       .content {
                             opacity: 1;
@@ -1226,14 +1226,14 @@ body{
                             transition: opacity 0.3s ease;
                       }
                   
-                      // Appliquer les styles directement ici pour <ul>
-                      background-color: #f6f6f6; // Appliquer à la liste
-                      border-radius: 5px; // Appliquer à la liste
-                       // Padding pour la liste entière
+                      
+                      background-color: #f6f6f6; 
+                      border-radius: 5px; 
+                       
                   
                       li {
-                        background-color: #f6f6f6; // Fond pour chaque élément
-                        border-radius: 5px; // Arrondi pour chaque élément
+                        background-color: #f6f6f6; 
+                        border-radius: 5px; 
                         
                       }
                     }
